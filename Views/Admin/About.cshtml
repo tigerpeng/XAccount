@@ -1,0 +1,71 @@
+﻿@{
+    ViewData["Title"] = "About";
+}
+
+<!-- Content Wrapper. Contains page content -->
+<div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <section class="content-header">
+        <div class="container-fluid">
+            <div class="row mb-2">
+                <div class="col-sm-6">
+                    <h2>@ViewData["Title"]</h2>
+                    <h3>@ViewData["Message"]</h3>
+                    <h3>@ViewData["Penghong"]</h3>
+
+                    <p>Use this area to provide additional information.</p>
+
+                </div>
+                <div class="col-sm-6">
+                    <ol class="breadcrumb float-sm-right">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active">Blank Page</li>
+                    </ol>
+                </div>
+            </div>
+        </div><!-- /.container-fluid -->
+    </section>
+
+    <!-- Main content -->
+    <section class="content">
+
+        <!-- Default box -->
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">主播工资表</h3>
+
+                <div class="card-tools">
+                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                        <i class="fas fa-minus"></i>
+                    </button>
+                    <button type="button" class="btn btn-tool" data-card-widget="remove" data-toggle="tooltip" title="Remove">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            <div class="card-body">
+
+                <p>主播工资表(上周报)   <a asp-action="ExportWeek">导出到Excel</a></p>
+                <p>主播工资表(上月报)   <a asp-action="ExportMoth">导出到Excel</a></p>
+
+                <h5>主播工资表测试</h5>
+                <p>主播工资表(本周报)   <a asp-action="ExportThisWeek">本周导出到Excel</a></p>
+                <p>主播工资表(本月报)   <a asp-action="ExportThisMoth">本月导出到Excel</a></p>
+
+            </div>
+            <!-- /.card-body -->
+            <div class="card-footer">
+                Footer
+            </div>
+            <!-- /.card-footer-->
+        </div>
+        <!-- /.card -->
+
+    </section>
+    <!-- /.content -->
+</div>
+<!-- /.content-wrapper -->
+
+
+
+
